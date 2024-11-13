@@ -1,47 +1,52 @@
-<style>
-    * {
-/*         color: red !important; */
-        font-family: "Comic Sans MS";
-        
-    }
-    
-    p, span, ul, ol, h1,h2,h3,h4,h5,h6, td {
-        color: transparent !important;
-        background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red) !important;
-        background-clip: text !important;
-        animation: rainbow 8s ease infinite !important;
-        background-size: 800% 800%;
-    }
-    
-    body {
-        
-        background-image: repeating-linear-gradient(135deg, violet, indigo, blue, green, yellow, orange, red) !important;
-        animation: rainbow 30s ease infinite !important;
-        background-size: 1600% 1600%;
-    }
-    img {
-        animation: imgs 5s linear infinite !important;
-    }
-    
-    div {
-        background: transparent !important;
-    }
-    
-    @keyframes rainbow  {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 25%}
-    100%{background-position:0% 50%}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: "Comic Sans MS", "Comic Neue", cursive !important;
 }
-    
-    @keyframes  imgs {
-         0% {
-    transform: rotate(0deg);
-  }
-        75% {
-            transform: rotate(180deg);
-        }
-  100% {
-    transform: rotate(360deg);
-  }
+
+p, span, ul, ol, h1, h2, h3, h4, h5, h6, td {
+    color: transparent !important;
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red) !important;
+    background-clip: text !important;
+    animation: rainbow 8s ease infinite !important;
+    background-size: 800% 800%;
+}
+
+body {
+
+    background-image: repeating-linear-gradient(135deg, violet, indigo, blue, green, yellow, orange, red) !important;
+    animation: rainbow 30s ease infinite !important;
+    background-size: 1600% 1600%;
+}
+
+img {
+    animation: imgs 5s linear infinite !important;
+}
+
+div {
+    background: transparent !important;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0 50%;
     }
-</style>
+    50% {
+        background-position: 100% 25%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes imgs {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
