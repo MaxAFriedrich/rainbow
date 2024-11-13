@@ -4,7 +4,24 @@
     font-family: "Comic Sans MS", "Comic Neue", cursive !important;
 }
 
-p, span, ul, ol, h1, h2, h3, h4, h5, h6, td {
+p,
+span,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+textarea,
+input,
+label,
+a,
+div,
+code,
+pre {
     color: transparent !important;
     background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red) !important;
     background-clip: text !important;
@@ -12,30 +29,39 @@ p, span, ul, ol, h1, h2, h3, h4, h5, h6, td {
     background-size: 800% 800%;
 }
 
-body {
+
+
+body,
+body:hover,
+body:not(:hover) {
 
     background-image: repeating-linear-gradient(135deg, violet, indigo, blue, green, yellow, orange, red) !important;
     animation: rainbow 30s ease infinite !important;
     background-size: 1600% 1600%;
 }
-
-img {
+/*     } */
+img,
+svg,
+video,
+media {
     animation: imgs 5s linear infinite !important;
 }
 
-div {
+div,
+nav,
+pre {
     background: transparent !important;
 }
 
 @keyframes rainbow {
     0% {
-        background-position: 0 50%;
+        background-position: 0% 50%
     }
     50% {
-        background-position: 100% 25%;
+        background-position: 100% 25%
     }
     100% {
-        background-position: 0 50%;
+        background-position: 0% 50%
     }
 }
 
